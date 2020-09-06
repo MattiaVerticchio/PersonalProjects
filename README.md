@@ -1,7 +1,7 @@
 # Mattia Verticchio — Progetti Personali
 [Click here for the English version.](https://github.com/MattiaVerticchio)
 
-Questo repository contiene una raccolta di progetti personali e applicazioni di machine learning a diversi settori:
+Questo repository contiene una selezione di progetti personali e applicazioni del machine learning ai seguenti settori:
 - Finanza;
 - Medicina;
 - Marketing;
