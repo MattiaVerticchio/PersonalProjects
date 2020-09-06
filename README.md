@@ -1,8 +1,11 @@
 # Mattia Verticchio — Progetti Personali
+[The English version is here.](https://github.com/MattiaVerticchio)
 
-🇺🇸 [English version here](https://github.com/MattiaVerticchio) 🇬🇧
-
-Questo repository contiene una raccolta di progetti personali e applicazioni di machine learning a diversi settori: finanzia, medicina, marketing, e aerospazio.
+Questo repository contiene una raccolta di progetti personali e applicazioni di machine learning a diversi settori:
+- Finanza;
+- Medicina;
+- Marketing;
+- Aerospazio.
 
 ## Indice
 1. Previsione dell’andamento di indici di mercato azionari, obbligazionari, e liquidità
