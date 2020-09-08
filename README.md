@@ -5,13 +5,13 @@ Questo repository contiene una selezione di progetti personali e applicazioni de
 - Finanza;
 - Medicina;
 - Marketing;
-- Aerospazio.
+- Computer vision.
 
 ## Indice
-1. Previsione dell’andamento di indici di mercato azionari, obbligazionari, e liquidità attraverso serie storiche, con ottimizzazione della pipeline di pre-processing e apprendimento tramite algoritmi genetici utilizzando il software H2O.ai;
+1. Previsione dell’andamento di serie storiche di indici di mercato, con ottimizzazione della pipeline di pre-processing e apprendimento tramite algoritmi genetici utilizzando il software H2O.ai;
 1. Classificazione di malattie oncologiche da dati sul sequenziamento del genoma (RNAseq), con focus sull’ottimizzazione degli iperparametri di un modello Microsoft LightGBM;
 1. Previsione comportamentale dei clienti nel settore bancario, utilizzando un dataset anonimizzato e pre-trattato di Santander Bank e il framework PyCaret, comparando l’efficacia di diversi modelli statistici e di machine learning;
-1. Classificazione ambientale di immagini Intel acquisite via satellite, è stata ricercata un’architettura ottimale di *Deep Neural Recurring Networks* su framework AutoKeras+TensorFlow;
+1. Classificazione ambientale di immagini Intel, è stata ricercata un’architettura ottimale di *Deep Neural Recurring Networks* su framework Auto-Keras+TensorFlow;
 
 ## Contatti
 **Email** — email@email.com
