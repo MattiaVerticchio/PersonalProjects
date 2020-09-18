@@ -12,4 +12,4 @@ Questo repository contiene una selezione di progetti personali e applicazioni de
 
 ## Contatti
 - **Email** email@email.com
-- **Linkedin** linkedin.com
+- **LinkedIn** linkedin.com
