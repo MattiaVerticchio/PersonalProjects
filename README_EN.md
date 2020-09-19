@@ -1,6 +1,6 @@
 # Mattia Verticchio — Personal Projects
 
-> **English** / [Italiano](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README.md)
+>  [Italiano](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README.md) / **English**
 
 This repository contains a selection of my projects and machine learning applications to different industries.
 
