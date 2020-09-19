@@ -11,4 +11,4 @@ Questo repository contiene una selezione di progetti personali e applicazioni de
 1. **Elaborazione del linguaggio naturale** — [Classificazione di news dell’agenzia stampa Reuters]()
 
 ## Contatti
-Puoi contattarmi via [email](email@email.com) o su [LinkedIn](linkedin.com).
+Puoi contattarmi via [email](email@email.com) o su [LinkedIn](https://www.linkedin.com).
