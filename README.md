@@ -1,5 +1,5 @@
 # Mattia Verticchio — Progetti Personali
-**Italiano** / [English](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README_EN.md)
+> **Italiano** / [English](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README_EN.md)
 
 Questo repository contiene una selezione di progetti personali e applicazioni del machine learning a diversi settori.
 
