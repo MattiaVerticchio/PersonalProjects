@@ -1,4 +1,6 @@
-# 📈 Yields Forecasting
+# Market Forecasting
+> [Italiano]() / **English**
+
 This project focuses on forecasting equity, bond, and liquidity yields from time series, over a 65 days horizon.
 
 > _Note: The training dataset and the benchmark implementation are not included in this repository due to licensing concerns._
