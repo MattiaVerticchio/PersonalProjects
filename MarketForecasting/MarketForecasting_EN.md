@@ -1,9 +1,11 @@
 # Market Forecasting
 > [Italiano]() / **English**
+>
+> _Note: The training dataset and the benchmark implementation are not included in this repository due to licensing concerns._
 
+### Summary
 This project focuses on forecasting equity, bond, and liquidity yields from time series, over a 65 days horizon.
 
-> _Note: The training dataset and the benchmark implementation are not included in this repository due to licensing concerns._
 
 The dataset is made up of 19 columns containing 3 different asset class yields: equity, bond, and liquidity covering the period from 2015 to 2019.
 The last 65 days of the dataset are used as testing subset and the remaining previous part as training subset.
