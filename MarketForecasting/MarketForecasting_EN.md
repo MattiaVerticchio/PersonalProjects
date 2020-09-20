@@ -53,8 +53,8 @@ The detailed results of the % reduction in MAE are represented in the following 
 ## Plots
 
 <p align="center">
-  <img width="400" src="/preplots/MXEM.svg">
-  <img width="400" src="/postplots/MXEM.svg">
+  <img width="400" src="preplots/MXEM.svg">
+  <img width="400" src="postplots/MXEM.svg">
 </p>
 
 
