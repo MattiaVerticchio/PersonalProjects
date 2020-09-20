@@ -1,7 +1,7 @@
 # Mattia Verticchio — Progetti Personali
 > **Italiano** / [English](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README_EN.md)
 
-Questo repository contiene una selezione di progetti personali e applicazioni di varie tecniche di machine learning a diversi settori.
+Questa pagina contiene una selezione di progetti personali e applicazioni di varie tecniche di machine learning a diversi settori.
 
 ## Indice
 1. **FinTech** — [Previsione dell’andamento di indici di mercato da serie storiche]()
