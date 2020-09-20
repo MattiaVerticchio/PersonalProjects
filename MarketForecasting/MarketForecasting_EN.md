@@ -180,3 +180,5 @@ In conclusion what could be furtherly improved?
 
 Finally, we should take a look at the research side.
 As of today, the state-of-the-art for multi-variate time series forecasting seems to be [GRU-ODE-Bayes networks](https://arxiv.org/abs/1905.12374), this kind of Neural Ordinary Differential Equations should be explored too.
+
+[Go back to index >](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README_EN.md)
