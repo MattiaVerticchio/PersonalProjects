@@ -4,10 +4,10 @@
 > _Note: The training dataset and the benchmark implementation are not included in this repository due to licensing concerns._
 
 ### Summary
-This project focuses on forecasting equity, bond, and liquidity yields from time series, over a 65 days horizon.
+This project focuses on forecasting equity, bond, and liquidity market indeces from time series, over a 65 days horizon.
 
 
-The dataset is made up of 19 columns containing 3 different asset class yields: equity, bond, and liquidity covering the period from 2015 to 2019.
+The dataset is made up of 19 columns containing 3 different asset classes: equity, bond, and liquidity covering the period from 2015 to 2019.
 The last 65 days of the dataset are used as testing subset and the remaining previous part as training subset.
 The benchmark is Armundia Group’s GRNN model I obtained for the final project of the university course in Machine Learning.
 The improvement metric is the percent reduction in mean absolute error (MAE) for each asset, which is defined as follows:
@@ -18,10 +18,9 @@ The improvement metric is the percent reduction in mean absolute error (MAE) for
 
 where _Y_ is the actual value of the test set, _y_ is the model’s forecast, and _n_ is 65, the forecasting horizon. 
 
-The approach I took is different from the benchmark.
 I trained a gradient boosting model for each index, instead of a common GRNN for all the indexes, and optimized the pipeline through genetic evolution with H2O.ai Driverless AI.
 
-Gradient boosting models are ensemble learners, they make use of groups of decision trees to outperform the trees taken singularly and they generally perform well on structured datasets, like time series. Recurrent neural networks, however, keep an advantage on unstructured data.
+Gradient boosting models are ensemble learners, they make use of groups of decision trees to outperform the simple regressors taken singularly.
 
 ## Results
 As stated before, the benchmark is a GRNN model. I’m comparing the results of the new models against the predictions that came with the original project dataset and notebook.
