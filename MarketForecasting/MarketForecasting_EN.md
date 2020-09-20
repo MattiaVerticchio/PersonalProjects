@@ -59,104 +59,104 @@ The detailed results of the % reduction in MAE are represented in the following 
 
 
 <p align="center">
-  <img width="400" src="/preplots/MXEU.svg">
-  <img width="400" src="/postplots/MXEU.svg">
+  <img width="400" src="preplots/MXEU.svg">
+  <img width="400" src="postplots/MXEU.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/MXNA.svg">
-  <img width="400" src="/postplots/MXNA.svg">
+  <img width="400" src="preplots/MXNA.svg">
+  <img width="400" src="postplots/MXNA.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/MXEF.svg">
-  <img width="400" src="/postplots/MXEF.svg">
+  <img width="400" src="preplots/MXEF.svg">
+  <img width="400" src="postplots/MXEF.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/MXJP.svg">
-  <img width="400" src="/postplots/MXJP.svg">
+  <img width="400" src="preplots/MXJP.svg">
+  <img width="400" src="postplots/MXJP.svg">
 </p>  
 
 
 <p align="center">
-  <img width="400" src="/preplots/JPMGEMLC.svg">
-  <img width="400" src="/postplots/JPMGEMLC.svg">
+  <img width="400" src="preplots/JPMGEMLC.svg">
+  <img width="400" src="postplots/JPMGEMLC.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JNUCUK.svg">
-  <img width="400" src="/postplots/JNUCUK.svg">
+  <img width="400" src="preplots/JNUCUK.svg">
+  <img width="400" src="postplots/JNUCUK.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/SBF14T.svg">
-  <img width="400" src="/postplots/SBF14T.svg">
+  <img width="400" src="preplots/SBF14T.svg">
+  <img width="400" src="postplots/SBF14T.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/ER00.svg">
-  <img width="400" src="/postplots/ER00.svg">
+  <img width="400" src="preplots/ER00.svg">
+  <img width="400" src="postplots/ER00.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/UC00.svg">
-  <img width="400" src="/postplots/UC00.svg">
+  <img width="400" src="preplots/UC00.svg">
+  <img width="400" src="postplots/UC00.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JNUCUS.svg">
-  <img width="400" src="/postplots/JNUCUS.svg">
+  <img width="400" src="preplots/JNUCUS.svg">
+  <img width="400" src="postplots/JNUCUS.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/C0A0.svg">
-  <img width="400" src="/postplots/C0A0.svg">
+  <img width="400" src="preplots/C0A0.svg">
+  <img width="400" src="postplots/C0A0.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JPEGCOMP.svg">
-  <img width="400" src="/postplots/JPEGCOMP.svg">
+  <img width="400" src="preplots/JPEGCOMP.svg">
+  <img width="400" src="postplots/JPEGCOMP.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JNUCJP.svg">
-  <img width="400" src="/postplots/JNUCJP.svg">
+  <img width="400" src="preplots/JNUCJP.svg">
+  <img width="400" src="postplots/JNUCJP.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JC00.svg">
-  <img width="400" src="/postplots/JC00.svg">
+  <img width="400" src="preplots/JC00.svg">
+  <img width="400" src="postplots/JC00.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JPCAEU3M.svg">
-  <img width="400" src="/postplots/JPCAEU3M.svg">
+  <img width="400" src="preplots/JPCAEU3M.svg">
+  <img width="400" src="postplots/JPCAEU3M.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JPCAGB3M.svg">
-  <img width="400" src="/postplots/JPCAGB3M.svg">
+  <img width="400" src="preplots/JPCAGB3M.svg">
+  <img width="400" src="postplots/JPCAGB3M.svg">
 </p>
 
 
 <p align="center">
-  <img width="400" src="/preplots/JPCAUS3M.svg">
-  <img width="400" src="/postplots/JPCAUS3M.svg">
+  <img width="400" src="preplots/JPCAUS3M.svg">
+  <img width="400" src="postplots/JPCAUS3M.svg">
 </p>
 
 # Conclusions
