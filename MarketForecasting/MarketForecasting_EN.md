@@ -168,11 +168,13 @@ Gradient boosting models however brought a stable overall reduction in forecasti
 
 In conclusion what could be furtherly improved?
 
+1. Adjusting the training data for inflation over the observations time-frame.
 1. Updating the dataset extending the period covered by observations. Some indexes extend for decades and the available dataset covers ~5 years.
-2. Increasing sampling frequency, adding intraday asset data.
-3. Introduce more assets and/or exogenous features that can impact the prediction, like macroeconomic indicators, notable events, and local holidays.
-4. Augment the dataset using signal processing metrics: moving average, exponential smoothing, LOESS regression, cross-covariance, cross-correlation, feature interaction.
-5. Introduce a natural language processing component based on news streams and financial docs, like SEC reports and analysts’ predictions.
+1. Increasing sampling frequency, adding intraday asset data.
+1. Disaggregate the index composition.
+1. Introduce more assets and/or exogenous features that can impact the prediction, like macroeconomic indicators, notable events, and local holidays.
+1. Augment the dataset using signal processing metrics: moving average, exponential smoothing, LOESS regression, cross-covariance, cross-correlation, feature interaction.
+1. Introduce a natural language processing component based on news streams and financial docs, like SEC reports and analysts’ predictions.
 
 
 Finally, we should take a look at the research side.
