@@ -21,38 +21,38 @@ I trained a gradient boosting model for each index, instead of a common GRNN for
 
 Gradient boosting models are ensemble learners, they make use of groups of decision trees to outperform the trees taken singularly and they generally perform well on structured datasets, like time series. Recurrent neural networks, however, keep an advantage on unstructured data.
 
-# Results
+## Results
 As stated before, the benchmark is a GRNN model. I’m comparing the results of the new models against the predictions that came with the original project dataset and notebook.
 Gradient boosting models brought an average ~27% reduction in mean absolute error in post cumulative yields and a ~90% reduction in pre cumulative ones.
-The detailed results of the % reduction in MAE are represented in the following table, higher % means better accuracy and negative values mean an increase in MAE.
+
+### Improvement
+The detailed results of the % reduction in MAE are represented in the following table.
+Higher % means better accuracy and negative values mean worse predictions.
 
 | Index | Pre | Post |
 | ----- | -----| ----- |
-| MXEM | 95.2 % | 72.0 % |
-| MXEU | 93.6 % | 68.1 % |
-| MXNA | 77.8 % | -38.4 % |
-| MXEF | 94.6 % | -76.0 % |
-| MXJP | 90.5 % | 57.2 %|
-| MXPC | 94.0 % | 61.2 % |
-| JPMGEMLC | 83.6 % | 35.5 % |
-| JNUCUK | 76.9 % | 75.8 % |
-| SBF14T | 90.1 % | 59.0 % |
-| ER00 | 92.6 % | -48.9 % |
-| UC00 | 85.9 % | 23.3 % |
-| JNUCUS | 96.0 % | 61.4 % |
-| C0A0 | 94.0 % | 63.7 % |
-| JPEGCOMP | 95.1 % | 61.7 % |
-| JNUCJP | 76.7 % | 20.4 % |
-| JC00 | 70.7 % | -69.4 % |
-| JPCAEU3M | 99.6 % | 9.8 % |
-| JPCAGB3M | 99.3 % | -13.9 % |
-| JPCAUS3M | 99.9 % | 89.1 % |
-| Average | 89.8 % | 26.9 % |
+| MXEM | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 95.2 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 72.0 % |
+| MXEU | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 93.6 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 68.1 % |
+| MXNA | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 77.8 % | <img src="https://via.placeholder.com/12/f03c15/000000?text=+"/> -38.4 % |
+| MXEF | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 94.6 % | <img src="https://via.placeholder.com/12/f03c15/000000?text=+"/> -76.0 % |
+| MXJP | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 90.5 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 57.2 %|
+| MXPC | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 94.0 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 61.2 % |
+| JPMGEMLC | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 83.6 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 35.5 % |
+| JNUCUK | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 76.9 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 75.8 % |
+| SBF14T | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 90.1 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 59.0 % |
+| ER00 | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 92.6 % | <img src="https://via.placeholder.com/12/f03c15/000000?text=+"/> -48.9 % |
+| UC00 | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 85.9 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 23.3 % |
+| JNUCUS | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 96.0 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 61.4 % |
+| C0A0 | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 94.0 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 63.7 % |
+| JPEGCOMP | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 95.1 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 61.7 % |
+| JNUCJP | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 76.7 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 20.4 % |
+| JC00 | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 70.7 % | <img src="https://via.placeholder.com/12/f03c15/000000?text=+"/> -69.4 % |
+| JPCAEU3M | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 99.6 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 9.8 % |
+| JPCAGB3M | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 99.3 % | <img src="https://via.placeholder.com/12/f03c15/000000?text=+"/> -13.9 % |
+| JPCAUS3M | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 99.9 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 89.1 % |
+| Average | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 89.8 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 26.9 % |
 
-
-
-
-## Plots
+### Plots
 
 <p align="center">
   <img width="400" src="preplots/MXEM.svg">
@@ -161,7 +161,7 @@ The detailed results of the % reduction in MAE are represented in the following 
   <img width="400" src="postplots/JPCAUS3M.svg">
 </p>
 
-# Conclusions
+## Conclusions
 The new models are overall better than the GRNN but of course, they aren’t perfect if we look at the post cumulative performances.
 In some isolated indexes, the new models didn’t outperform the benchmark and require further tuning and engineering.
 Gradient boosting models however brought a stable overall reduction in forecasting error in the pre cumulative yields (90%).
