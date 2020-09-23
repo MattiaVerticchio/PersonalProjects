@@ -1,34 +1,34 @@
 # Market Forecasting
 > [Italiano]() / **English**
 >
-> _Note: The training dataset and the benchmark implementation are not included in this repository due to licensing concerns._
+> _Note: This repository doesn’t contain the training dataset and the benchmark implementation due to licensing concerns._
 
 ### Summary
-This project focuses on forecasting equity, bond, and liquidity market indeces from time series, over a 65 days horizon.
+This project focuses on forecasting equity, bond, and liquidity market indices from time-series, over a 65 days horizon.
 
 
-The dataset is made up of 19 columns containing 3 different asset classes: equity, bond, and liquidity covering the period from 2015 to 2019.
-The last 65 days of the dataset are used as testing subset and the remaining previous part as training subset.
-The benchmark is Armundia Group’s GRNN model I obtained for the final project of the university course in Machine Learning.
+The dataset contains 19 columns comprising three different asset classes: equity, bond, and liquidity. It covers the 2015–2019 frame.
+We’ll test the model on the last 65 days.
+The benchmark implementation is Armundia Group’s GRU neural network model I studied attending the university course in Machine Learning, at the University of L’Aquila.
 The improvement metric is the percent reduction in mean absolute error (MAE) for each asset, which is defined as follows:
 
 <p align="center">
 <img src="https://latex.codecogs.com/svg.latex?\text{MAE}=\frac{1}{n}\sum_{i=1}^{n}|Y_i-y_i|"/>
 </p>
 
-where _Y_ is the actual value of the test set, _y_ is the model’s forecast, and _n_ is 65, the forecasting horizon. 
+_Y_ is the actual value of the test set, _y_ is the model’s forecast, and _n_ is 65, the forecasting horizon. 
 
 I trained a gradient boosting model for each index, instead of a common GRNN for all the indexes, and optimized the pipeline through genetic evolution with H2O.ai Driverless AI.
 
-Gradient boosting models are ensemble learners, they make use of groups of decision trees to outperform the simple regressors taken singularly.
+Gradient boosting models are ensemble learners. They use groups of decision trees to outperform the simple regressors taken singularly.
 
 ## Results
 As stated before, the benchmark is a GRNN model. I’m comparing the results of the new models against the predictions that came with the original project dataset and notebook.
 Gradient boosting models brought an average ~27% reduction in mean absolute error in post cumulative yields and a ~90% reduction in pre cumulative ones.
 
 ### Improvement
-The detailed results of the % reduction in MAE are represented in the following table.
-Higher % means better accuracy and negative values mean worse predictions.
+The following table represents the detailed results of the % reduction in MAE.
+A higher % means better accuracy, while negative values mean worse predictions.
 
 | Index | Pre | Post |
 | ----- | -----| ----- |
@@ -163,23 +163,23 @@ Higher % means better accuracy and negative values mean worse predictions.
 </p>
 
 ## Conclusions
-The new models are overall better than the GRNN but of course, they aren’t perfect if we look at the post cumulative performances.
-In some isolated indexes, the new models didn’t outperform the benchmark and require further tuning and engineering.
-Gradient boosting models however brought a stable overall reduction in forecasting error in the pre cumulative yields (90%).
+The new models have overall better scores than the GRU neural network. Of course, they aren’t perfect.
+In some isolated indices, the new models didn’t outperform the benchmark, requiring further tuning and engineering.
+Gradient boosting models, however, brought a stable overall reduction in forecasting error in the pre cumulative yields (90%).
 
-In conclusion what could be furtherly improved?
+In conclusion, what could we furtherly improve?
 
 1. Adjusting the training data for inflation over the observations time-frame.
-1. Updating the dataset extending the period covered by observations. Some indexes extend for decades and the available dataset covers ~5 years.
+1. Updating the dataset extending the period covered by observations. Some indexes (E. G. MSCI ones) cover decades, while the available dataset covers ~5 years only.
 1. Increasing sampling frequency, adding intraday asset data.
-1. Disaggregate the index composition.
-1. Introduce more assets and/or exogenous features that can impact the prediction, like macroeconomic indicators, notable events, and local holidays.
+1. Disaggregate the index compositions.
+1. Introduce more assets or exogenous features that can impact the prediction, like macroeconomic indicators, notable events, and local holidays.
 1. Augment the dataset using signal processing metrics: moving average, exponential smoothing, LOESS regression, cross-covariance, cross-correlation, feature interaction.
-1. Introduce a natural language processing component based on news streams and financial docs, like SEC reports and analysts’ predictions.
+1. Introduce a natural language processing component based on news streams and financial docs, like SEC filings and analysts’ predictions.
 
 
-Finally, we should take a look at the research side.
-As of today, the state-of-the-art for multi-variate time series forecasting seems to be [GRU-ODE-Bayes networks](https://arxiv.org/abs/1905.12374), this kind of Neural Ordinary Differential Equations should be explored too.
+Finally, we could take a look at the research side.
+As of today, the state-of-the-art for multi-variate time series forecasting seems to be [GRU-ODE-Bayes](https://arxiv.org/abs/1905.12374), [Latent ODEs](https://arxiv.org/abs/1907.03907v1) and [LSTM](https://arxiv.org/abs/1612.02130v2) networks.
 
 
 
