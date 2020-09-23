@@ -11,5 +11,8 @@ This repository contains a selection of my projects and machine learning applica
 1. **Computer Vision** — [E-commerce products image classification](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/ProductClassification/ComputerVisionImageClassification.ipynb)
 1. **Natural Language Processing** — [Reuters agency news classification](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/NewsClassification/ReutersNewsClassification.ipynb)
 
+## About Me
+Currently enrolled at University of L’Aquila, bachelor degree in Physics.
+
 ## Contacts
 You can contact me via [email](email@email.com) or on [LinkedIn](linkedin.com).
