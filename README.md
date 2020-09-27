@@ -4,8 +4,8 @@
 Questa pagina contiene una selezione di progetti personali e applicazioni di varie tecniche di machine learning a diversi settori.
 
 ## Indice
-1. **FinTech** — [Previsione dell’andamento di indici di mercato da serie storiche]()
-1. **BioTech** — [Classificazione di malattie oncologiche a partire dal sequenziamento del genoma]()
+1. **FinTech** — [Previsione dell’andamento di indici di mercato da serie storiche](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/MarketForecasting/MarketForecasting.md)
+1. **BioTech** — [Classificazione di malattie oncologiche a partire dal sequenziamento dell’RNA]()
 1. **Marketing / FinTech** — [Previsione comportamentale di clienti nel settore bancario]()
 1. **Computer Vision** — [Classificazione di immagini di prodotti e-commerce]()
 1. **Elaborazione del Linguaggio Naturale** — [Classificazione di news dell’agenzia stampa Reuters]()
