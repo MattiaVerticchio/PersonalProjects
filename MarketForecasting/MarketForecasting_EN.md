@@ -3,13 +3,13 @@
 >
 > _Note: This repository doesn’t contain the training dataset and the benchmark implementation due to licensing concerns._
 
-### Summary
-This project focuses on forecasting equity, bond, and liquidity market indices from time-series, over a 65 days horizon.
+> **Abstract**
+>
+> This project focuses on forecasting market indices from time-series, over a 65 days horizon. The dataset contains 19 columns comprising three different asset classes: equity, bond, and liquidity. It covers the 2015–2019 frame. The framework is H2O.ai software, executed on Google Colab. The results are compared to Armundia Group’s GRU neural network obtained during the university course in Machine Learning. The new results significantly outperform the benchmark, in particular there are a ~90% reduction in forecasting error for non cumulative yields, and ~27% reduction for cumulative ones, with some indices performing better than others.
 
-
-The dataset contains 19 columns comprising three different asset classes: equity, bond, and liquidity. It covers the 2015–2019 frame.
+## Introduction
+The objective of this project is the prediction of future market indices. The dataset covers 19 indices and 4–5 years.
 We’ll test the model on the last 65 days.
-The benchmark implementation is Armundia Group’s GRU neural network model I studied attending the university course in Machine Learning, at the University of L’Aquila.
 The improvement metric is the percent reduction in mean absolute error (MAE) for each asset, which is defined as follows:
 
 <p align="center">
