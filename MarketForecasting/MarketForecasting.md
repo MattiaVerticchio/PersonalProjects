@@ -8,20 +8,20 @@
 > Questo progetto è incentrato sulla previsione di indici di mercato a partire da serie storiche, su un orizzonte temporale di 65 giorni. Il dataset contiene 19 colonne che comprendono tre diverse classi di asset: azioni, obbligazioni e liquidità. L’intervallo temporale coperto è il periodo 2015-2019. Il framework utilizzato è sviluppato da H2O.ai, ed eseguito su Google Colab. I risultati sono confrontati con la _Gated Recurrent Neural Network_ sviluppata da Armundia Group e ottenuta durante la frequentazione del corso universitario in Machine Learning. I nuovi risultati superano significativamente il benchmark, in particolare vi è una riduzione del ~90% dell'errore di previsione per i rendimenti non cumulativi e del ~27% per quelli cumulativi, con alcuni indici che hanno prestazioni migliori di altri.
 
 
-## Introduction
-The objective of this project is the prediction of future market indices. The dataset covers 19 indices and 4–5 years.
-We’ll test the model on the last 65 days.
-The improvement metric is the percent reduction in mean absolute error (MAE) for each asset, which is defined as follows:
+## Introduzione
+L'obiettivo di questo progetto è la previsione dell’andamento di indici di mercato. Il dataset è composto da 19 indici e copre un periodo di 4-5 anni.
+Il modello sarà testato sugli ultimi 65 giorni.
+La metrica di riferimento è la riduzione percentuale dell'errore assoluto medio (MAE) per ciascun asset, che è definito come segue:
 
-<p align="center">
-<img src="https://latex.codecogs.com/svg.latex?\text{MAE}=\frac{1}{n}\sum_{i=1}^{n}|Y_i-y_i|"/>
+<p align = "center">
+<img src = "https://latex.codecogs.com/svg.latex?\text {MAE} = \ frac {1} {n} \ sum_ {i = 1} ^ {n} | Y_i-y_i |" />
 </p>
 
-_Y_ is the actual value of the test set, _y_ is the model’s forecast, and _n_ is 65, the forecasting horizon. 
+_Y_ è il valore reale del set di test, _y_ è la previsione del modello e _n_ è 65, l'orizzonte di previsione.
 
-I trained a gradient boosting model for each index, instead of a common GRNN for all the indexes, and optimized the pipeline through genetic evolution with H2O.ai Driverless AI.
+Ho addestrato un modello di aumento del gradiente per ogni indice, invece di un GRNN comune per tutti gli indici, e ho ottimizzato la pipeline attraverso l'evoluzione genetica con H2O.ai Driverless AI.
 
-Gradient boosting models are ensemble learners. They use groups of decision trees to outperform the simple regressors taken singularly.
+I modelli che aumentano il gradiente sono studenti di ensemble. Usano gruppi di alberi decisionali per superare i semplici regressori presi singolarmente.
 
 ## Results
 As stated before, the benchmark is a GRNN model. I’m comparing the results of the new models against the predictions that came with the original project dataset and notebook.
