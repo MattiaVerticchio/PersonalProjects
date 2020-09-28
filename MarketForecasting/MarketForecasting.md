@@ -1,20 +1,17 @@
 # Market Forecasting
 > **Italiano** / [English](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/MarketForecasting/MarketForecasting_EN.md)
 >
-> _Nota: Questo repository non contiene il dataset di training e l'implementazione del benchmark a causa di dubbi sulla licenza utilizzata._
+> _Nota: Questo repository non contiene il dataset e il modello di benchmark a causa di dubbi sulla licenza utilizzata._
 
 > **Sommario**
 >
 > Questo progetto è incentrato sulla previsione di indici di mercato a partire da serie storiche, su un orizzonte temporale di 65 giorni. Il dataset contiene 19 colonne che comprendono tre diverse classi di asset: azioni, obbligazioni e liquidità. L’intervallo temporale coperto è il periodo 2015-2019. Il framework utilizzato è sviluppato da H2O.ai, ed eseguito su Google Colab. I risultati sono confrontati con la _Gated Recurrent Neural Network_ sviluppata da Armundia Group e ottenuta durante la frequentazione del corso universitario in Machine Learning. I nuovi risultati superano significativamente il benchmark, in particolare vi è una riduzione del ~90% dell'errore di previsione per i rendimenti non cumulativi e del ~27% per quelli cumulativi, con alcuni indici che hanno prestazioni migliori di altri.
 
-
 ## Introduzione
-L'obiettivo di questo progetto è la previsione dell’andamento di indici di mercato. Il dataset è composto da 19 indici e copre un periodo di 4-5 anni.
-Il modello sarà testato sugli ultimi 65 giorni.
-La metrica di riferimento è la riduzione percentuale dell'errore assoluto medio (MAE) per ciascun asset, che è definito come segue:
+L'obiettivo di questo progetto è la previsione dell’andamento di indici di mercato. Il dataset è composto da 19 indici e copre un periodo di 4-5 anni. Il modello sarà testato sugli ultimi 65 giorni. La metrica di riferimento è la riduzione percentuale dell'errore assoluto medio (MAE) per ciascun asset, che è definito come segue:
 
-<p align = "center">
-<img src = "https://latex.codecogs.com/svg.latex?\text {MAE} = \ frac {1} {n} \ sum_ {i = 1} ^ {n} | Y_i-y_i |" />
+<p align="center">
+<img src="https://latex.codecogs.com/svg.latex?\text{MAE}=\frac{1}{n}\sum_{i=1}^{n}|Y_i-y_i|"/>
 </p>
 
 _Y_ è il valore reale del set di test, _y_ è la previsione del modello e _n_ è 65, l'orizzonte di previsione.
@@ -23,15 +20,13 @@ Ho addestrato un modello di aumento del gradiente per ogni indice, invece di un 
 
 I modelli che aumentano il gradiente sono studenti di ensemble. Usano gruppi di alberi decisionali per superare i semplici regressori presi singolarmente.
 
-## Results
-As stated before, the benchmark is a GRNN model. I’m comparing the results of the new models against the predictions that came with the original project dataset and notebook.
-Gradient boosting models brought an average ~27% reduction in mean absolute error in post cumulative yields and a ~90% reduction in pre cumulative ones.
+## Risultati
+Come affermato in precedenza, il benchmark è un modello GRNN. Sto confrontando i risultati dei nuovi modelli con le previsioni fornite con il set di dati e il taccuino del progetto originale. I modelli con aumento del gradiente hanno portato una riduzione media del ~ 27% dell'errore medio assoluto nei rendimenti post-cumulativi e una riduzione del ~ 90% in quelli pre-cumulativi.
 
-### Improvement
-The following table represents the detailed results of the % reduction in MAE.
-A higher % means better accuracy, while negative values mean worse predictions.
+### Performance
+La tabella seguente rappresenta i risultati dettagliati della riduzione% di MAE. Una percentuale più alta significa una migliore precisione, mentre i valori negativi indicano previsioni peggiori.
 
-| Index | Pre | Post |
+| Indice | Pre | Post |
 | ----- | -----| ----- |
 | MXEM | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 95.2 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 72.0 % |
 | MXEU | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 93.6 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 68.1 % |
@@ -54,7 +49,7 @@ A higher % means better accuracy, while negative values mean worse predictions.
 | JPCAUS3M | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 99.9 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 89.1 % |
 | Average | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 89.8 % | <img src="https://via.placeholder.com/12/29cc90/000000?text=+"/> 26.9 % |
 
-### Plots
+### Grafici
 
 <p align="center">
   <img width="400" src="preplots/MXEM.svg">
@@ -164,24 +159,22 @@ A higher % means better accuracy, while negative values mean worse predictions.
 </p>
 
 ## Conclusions
-The new models have overall better scores than the GRU neural network. Of course, they aren’t perfect.
-In some isolated indices, the new models didn’t outperform the benchmark, requiring further tuning and engineering.
-Gradient boosting models, however, brought a stable overall reduction in forecasting error in the pre cumulative yields (90%).
+I nuovi modelli hanno punteggi complessivamente migliori rispetto alla rete neurale GRU. Ovviamente non sono perfetti.
+In alcuni indici isolati, i nuovi modelli non hanno sovraperformato il benchmark, richiedendo ulteriori ottimizzazioni e ingegneria.
+I modelli di incremento del gradiente, tuttavia, hanno portato a una riduzione complessiva stabile dell'errore di previsione nei rendimenti pre-cumulativi (90%).
 
-In conclusion, what could we furtherly improve?
+In conclusione, cosa potremmo ulteriormente migliorare?
 
-1. Adjusting the training data for inflation over the observations time-frame.
-1. Updating the dataset extending the period covered by observations. Some indexes (E. G. MSCI ones) cover decades, while the available dataset covers ~5 years only.
-1. Increasing sampling frequency, adding intraday asset data.
-1. Disaggregate the index compositions.
-1. Introduce more assets or exogenous features that can impact the prediction, like macroeconomic indicators, notable events, and local holidays.
-1. Augment the dataset using signal processing metrics: moving average, exponential smoothing, LOESS regression, cross-covariance, cross-correlation, feature interaction.
-1. Introduce a natural language processing component based on news streams and financial docs, like SEC filings and analysts’ predictions.
+1. Regolazione dei dati di addestramento per l'inflazione nel periodo di tempo delle osservazioni.
+1. Aggiornamento del set di dati estendendo il periodo coperto dalle osservazioni. Alcuni indici (E. G. quelli MSCI) coprono decenni, mentre il set di dati disponibile copre solo ~ 5 anni.
+1. Aumento della frequenza di campionamento, aggiunta di dati sugli asset intraday.
+1. Disaggregare le composizioni dell'indice.
+1. Introdurre più risorse o caratteristiche esogene che possono influire sulla previsione, come indicatori macroeconomici, eventi importanti e festività locali.
+1. Aumenta il set di dati utilizzando metriche di elaborazione del segnale: media mobile, livellamento esponenziale, regressione LOESS, covarianza incrociata, correlazione incrociata, interazione delle caratteristiche.
+1. Introdurre un componente di elaborazione del linguaggio naturale basato su flussi di notizie e documenti finanziari, come le dichiarazioni SEC e le previsioni degli analisti.
 
-
-Finally, we could take a look at the research side.
-As of today, the state-of-the-art for multi-variate time series forecasting seems to be [GRU-ODE-Bayes](https://arxiv.org/abs/1905.12374), [Latent ODEs](https://arxiv.org/abs/1907.03907v1) and [LSTM](https://arxiv.org/abs/1612.02130v2) networks.
-
+Infine, potremmo dare un'occhiata al lato della ricerca.
+Ad oggi, lo stato dell'arte per la previsione di serie temporali multi-variata sembra essere [GRU-ODE-Bayes] (https://arxiv.org/abs/1905.12374), [ODE latenti] (https: //arxiv.org/abs/1907.03907v1) e [LSTM] (https://arxiv.org/abs/1612.02130v2).
 
 
-[**Go back to index >**](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README_EN.md)
+[**Torna all’indice >**](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/README_EN.md)
