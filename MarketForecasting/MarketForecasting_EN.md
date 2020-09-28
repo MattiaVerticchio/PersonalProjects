@@ -26,7 +26,7 @@ Gradient boosting models are ensemble learners. They use groups of decision tree
 As stated before, the benchmark is a GRNN model. I’m comparing the results of the new models against the predictions that came with the original project dataset and notebook.
 Gradient boosting models brought an average ~27% reduction in mean absolute error in post cumulative yields and a ~90% reduction in pre cumulative ones.
 
-### Improvement
+### Performance
 The following table represents the detailed results of the % reduction in MAE.
 A higher % means better accuracy, while negative values mean worse predictions.
 
