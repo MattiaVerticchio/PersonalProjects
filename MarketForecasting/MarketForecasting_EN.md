@@ -163,15 +163,15 @@ A higher % means better accuracy, while negative values mean worse predictions.
 </p>
 
 ## Conclusions
-The new models have overall better scores than the GRU neural network. Of course, they aren’t perfect.
-In some isolated indices, the new models didn’t outperform the benchmark, requiring further tuning and engineering.
+The new models have overall lower errors than the GRU neural network. Of course, they aren’t perfect.
+In some indices, the new models didn’t outperform the benchmark, requiring further tuning and engineering.
 Gradient boosting models, however, brought a stable overall reduction in forecasting error in the pre cumulative yields (90%).
 
-In conclusion, what could we furtherly improve?
+What could we furtherly improve?
 
-1. Adjusting the training data for inflation over the observations time-frame.
-1. Updating the dataset extending the period covered by observations. Some indexes (E. G. MSCI ones) cover decades, while the available dataset covers ~5 years only.
-1. Increasing sampling frequency, adding intraday asset data.
+1. Examine the composition and the dataset processing to determine and eliminate the source of data leakage.
+1. Updating the dataset extending the period covered by observations. Some indexes (E. G. MSCI ones) cover decades, while the available dataset covers ~5 years only. If needed we can adjust the training data for inflation over the observations time-frame.
+1. Increasing sampling frequency, adding intraday asset data and after hours prices, if available.
 1. Disaggregate the index compositions.
 1. Introduce more assets or exogenous features that can impact the prediction, like macroeconomic indicators, notable events, and local holidays.
 1. Augment the dataset using signal processing metrics: moving average, exponential smoothing, LOESS regression, cross-covariance, cross-correlation, feature interaction.
