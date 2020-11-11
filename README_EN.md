@@ -12,4 +12,4 @@ This repository contains a selection of my projects and machine learning applica
 1. **Natural Language Processing** — [Reuters agency news classification](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/NewsClassification/ReutersNewsClassification.ipynb)
 
 ## Contacts
-You can contact me via [email](verticchio.mattia@gmail.com), [Telegram](https://t.me/MattiaVerticchio) or [LinkedIn](https://www.linkedin.com/in/MattiaVerticchio/).
+You can contact me via [email](mailto:verticchio.mattia@gmail.com), [Telegram](https://t.me/MattiaVerticchio) or [LinkedIn](https://www.linkedin.com/in/MattiaVerticchio/).
