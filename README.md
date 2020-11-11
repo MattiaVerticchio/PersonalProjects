@@ -11,4 +11,4 @@ Questa pagina contiene una selezione di progetti personali e applicazioni di tec
 1. **Elaborazione del Linguaggio Naturale** — [Classificazione di news dell’agenzia stampa Reuters](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/NewsClassification/ReutersNewsClassification.ipynb)
 
 ## Contatti
-Posso essere contattato via [email](email@email.com), su [Telegram](https://t.me/MattiaVerticchio), o qui su GitHub.
+Posso essere contattato via [email](verticchio.mattia@gmail.com), su [Telegram](https://t.me/MattiaVerticchio), o su [LinkedIn](https://www.linkedin.com/in/MattiaVerticchio/).
