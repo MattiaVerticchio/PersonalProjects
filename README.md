@@ -9,6 +9,3 @@ Questa pagina contiene una selezione di progetti personali e applicazioni di tec
 1. **Marketing / FinTech** — [Previsione comportamentale di clienti nel settore bancario](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/TransactionPrediction/TransactionPrediction.ipynb)
 1. **Computer Vision** — [Classificazione di immagini di prodotti e-commerce](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/ProductClassification/ComputerVisionImageClassification.ipynb)
 1. **Elaborazione del Linguaggio Naturale** — [Classificazione di news dell’agenzia stampa Reuters](https://github.com/MattiaVerticchio/PersonalProjects/blob/master/NewsClassification/ReutersNewsClassification.ipynb)
-
-## Contatti
-Posso essere contattato via [email](mailto:verticchio.mattia@gmail.com), su [Telegram](https://t.me/MattiaVerticchio), o su [LinkedIn](https://www.linkedin.com/in/MattiaVerticchio/).
